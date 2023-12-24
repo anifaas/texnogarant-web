@@ -4,25 +4,26 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-container container">
-                <Logo/>
+                <a href="/"><Logo/></a>
                 <ul className="navbar__nav">
                     <li className="navbar__nav--item">
-                        <a href="/">Home</a>
+                        <a href="/">Новости</a>
                     </li>
                     <li className="navbar__nav--item">
-                        <a href="/about">About</a>
+                        <a href="/about">Контакты</a>
                     </li>
                     <li className="navbar__nav--item">
-                        <a href="/products">Products</a>
+                        <a href="/products">Дислокация</a>
                     </li>
                     <li className="navbar__nav--item">
-                        <a href="/services">Services</a>
+                        <a href="/products">Продукция</a>
                     </li>
                     <li className="navbar__nav--item">
-                        <a href="/contact">Contact</a>
+                        <a href="/contact">Easy guide</a>
                     </li>
                 </ul>
             </div>
         </nav>
+
     )
 }

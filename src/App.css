@@ -189,6 +189,14 @@ h4 {
 .intro--product--container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+
+.intro--product--container > button {
+  text-align: start;
+  border: none;
 }
 
 .intro--product--card {
@@ -200,6 +208,19 @@ h4 {
   background: linear-gradient(0deg, var(--primary-with-opacity) 0%, var(--primary-with-opacity) 50%), url('../public/images/product_2.png'), var(--primary) 100% / cover no-repeat;
   height: 280px;
   width: 280px;
+}
+
+.product--screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.product--screen-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 
 /* news intro style */
