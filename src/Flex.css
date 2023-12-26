@@ -1,0 +1,75 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 350px!important;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 28px!important;
+    }
+      
+    h3 {
+        font-size: 26px!important; 
+    }
+      
+    h4 {
+        font-size: 24px!important; 
+    }
+      
+    h5 {
+        font-size: 18px!important; 
+    }
+
+    .navbar__nav {
+        display: none!important;
+    }
+    
+    .hamburger {
+        display: block!important;
+    }
+
+    .navbar-container svg {
+        width: 150px!important;
+    }
+    .slide--content {
+        align-items: center!important;
+        text-align: center!important;
+    }
+    .slide--content-title {
+        width: 80%!important;
+    }
+
+    .slide--content-title > p{
+        font-size: 16px!important;
+    }
+
+    .section-title > button {
+        font-size: 18px!important;
+    } 
+
+    .intro--product--container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro--product--card {
+        flex-basis: calc(45% - 25px)!important;
+    } 
+
+    .news--cards {
+        display: grid!important;
+        grid-template-columns: 1fr!important;
+        gap: 25px;
+        justify-items: center;
+    }
+    .contact--container {
+        flex-direction: column;
+    }
+    .contact--field {
+        width: 100%!important;
+        margin-bottom: 25px;
+    } 
+    iframe{
+        width: 350px;
+    }
+
+}
