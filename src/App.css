@@ -443,3 +443,78 @@ h5 {
   width: 380px;
   justify-content: space-between;
 }
+
+.locatescreen--section {
+  margin-top: 50px;
+}
+
+.locatescreen--title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.locatescreen--contant-catalog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.locatescreen--contant-catalog > button {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--black);
+  padding: 10px 0;
+}
+.locatescreen--contant-catalog > button:focus {
+  width: 100%;
+  border-top: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+  border-bottom: 0;
+  padding: 10px 0;
+}
+.locatescreen--contant-catalog > button:active {
+  width: 100%;
+  border-top: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+  border-right: 2px solid var(--black);
+  border-bottom: 0;
+  padding: 10px 0;
+}
+
+.locatescreen--contant-workers {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.locatescreen--contant-workers table {
+  width: 100%;
+}
+
+.locatescreen--contant-workers thead tr {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-align: left;
+}
+
+.locatescreen--contant-workers th,td {
+  padding: 12px 15px;
+}
+
+.locatescreen--contant-workers tbody tr {
+  border-bottom: 1px solid #000;
+}
+
+.locatescreen--contant-workers tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.locatescreen--contant-workers tbody tr:last-of-type {
+  border-bottom: 2px solid #000;
+}
