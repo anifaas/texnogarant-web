@@ -1,13 +1,9 @@
 import data from '../../data/data.json';
 import {useNavigate} from 'react-router-dom'
 
-const news = data?.news || [];
-const introNews = news.slice(0,6)
+export default function NewsMainGreed() {
+    const headNewsItem = data?.news?.[0] || {};
 
-
-
-
-export default function News(){
     const navigate = useNavigate();
 
     const handleNewsClick = (news) => {
@@ -15,14 +11,22 @@ export default function News(){
     }
 
     return(
-        <section className="intro--news--section">
+        <section className="intro--news--section" style={{backgroundColor: `var(--white)`}}>
             <div className="intro--news--container container">
+                <div className="head--news">
+                    <div className="head--news--img">
+                        <img src={headNewsItem.newsImg} alt="" srcset="" />
+                    </div>
+                    <div className="head--news--contant">
+                        <h1>{headNewsItem.newsTitle}</h1>
+                        <p>{headNewsItem.NewsContent}</p>
+                    </div>
+                </div>
                 <div className="section-title">
                     <h1>Новости</h1>
-                    <button>Смотреть все</button>
-                </div>
-                <div className="news--cards">
-                    {introNews?.map((item, i) => (
+                </div> 
+                <div className="news--cards--main">
+                    {data?.news?.map((item, i) => (
                         <div key={i} className="news--card">
                             <div className="news--card--img">
                                 <img src={item.newsImg} alt="" />

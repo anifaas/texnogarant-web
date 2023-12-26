@@ -69,6 +69,14 @@ h4 {
   text-transform: uppercase; 
 }
 
+h5 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase; 
+}
+
 .section-title {
   display: flex;
   justify-content: space-between;
@@ -238,6 +246,13 @@ h4 {
   justify-items: center;
 }
 
+.news--cards--main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  justify-content: center;
+}
+
 .news--card {
   display: flex;
   flex-direction: column;
@@ -256,6 +271,29 @@ h4 {
 .news--card--content > button {
   border: none;
   cursor: pointer;
+}
+
+
+.head--news {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.news--screen {
+  padding: 50px 0;
+}
+
+.news--screen-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.news--screen-img > img {
+  width: 500px;
+  height: auto;
 }
 
 /* parters-intro */
@@ -340,5 +378,68 @@ h4 {
 .footer--ofdocs {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+}
+
+/* Office page style */
+
+.offices--list {
+  border-top: 1px solid var(--black);
+  border-left: 0px;
+  border-right: 0px;
+  padding: 10px;
+}
+.office--list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px 0px 1px 0px solid var(--black);
+  background: var(--bg-shade);
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+.bottom-list {
+  display: none;
+}
+
+.anim-open {
+  display: block;
+}
+
+.office--list-bottom {
+  position: relative;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list--bottom-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+/* dislocation style */
+
+.dislocation--section {
+  padding-bottom: 50px;
+}
+
+.dislocation--grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.dislocation--card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 380px;
   justify-content: space-between;
 }

@@ -7,13 +7,13 @@ export default function Navbar() {
                 <a href="/"><Logo/></a>
                 <ul className="navbar__nav">
                     <li className="navbar__nav--item">
-                        <a href="/">Новости</a>
+                        <a href="/news">Новости</a>
                     </li>
                     <li className="navbar__nav--item">
-                        <a href="/about">Контакты</a>
+                        <a href="/offices">Контакты</a>
                     </li>
                     <li className="navbar__nav--item">
-                        <a href="/products">Дислокация</a>
+                        <a href="/dislocation">Дислокация</a>
                     </li>
                     <li className="navbar__nav--item">
                         <a href="/products">Продукция</a>
